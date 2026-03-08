@@ -1,0 +1,173 @@
+/* GENERIC */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* BASE */
+
+body{
+    font: 1.125rem/160% "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    background-color: #07020d;
+    color: #fff;
+}
+
+/* MISE EN PAGE */
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+/* ELEMENT/TYPOGRAPHIE */
+
+a{
+    text-decoration: none;
+}
+
+/* COMPONENTS */
+
+header{
+    color: #07020d;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .wrapper{
+    background: #fff;
+    opacity: 80%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 800px;
+}
+
+.logo{
+    font: 1.875rem;
+    color: inherit;
+}
+
+span{
+    font: 1.875rem;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero{
+    height: 400px;
+    background: url('../images/photos/mountains.jpg') no-repeat top center/100%;
+}
+
+.contenu{
+    padding: 100px 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenu .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; 
+  border-radius: 10px;
+}
+
+.card{
+    position: relative;
+}
+
+.card button{
+    background-color: #07020D;
+    color: #5db7de;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+footer{
+    background-color: #5db7de;
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    font: 1.25rem;
+    padding: 30px 0;
+}
+
+.media{
+    background-color: #272727;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+
+    position: fixed;
+    top: 200px;
+    left: 0;
+}
+
+.media img{
+    height: 40px;
+    width: 40px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    display: block;
+   
+}
+
+.media img:hover{
+    position: relative;
+    left: 3px;
+}
+
+img.zoom{
+    max-height: 80%;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+div.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
