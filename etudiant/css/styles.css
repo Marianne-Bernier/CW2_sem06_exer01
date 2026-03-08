@@ -13,6 +13,7 @@ html {
 /* BASE */
 
 body{
+    margin: 0;
     font: 1.125rem/160% "Frank Ruhl Libre", serif;
     font-optical-sizing: auto;
     background-color: #07020d;
@@ -109,9 +110,11 @@ img{
 
 footer{
     background-color: #5db7de;
+    margin-bottom: 0;
 }
 
 p{
+    margin: 0;
     text-align: center;
     color: #fff;
     font: 1.25rem;
@@ -167,7 +170,11 @@ div.modal{
     padding: 30px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+.modal.visible{
+    display: flex;
 }
