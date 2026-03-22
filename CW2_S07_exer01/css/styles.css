@@ -1,0 +1,256 @@
+/* GENERIC */
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/* BASE */
+
+body{
+    margin: 0;
+    font: 1.125rem "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #fff;
+    color: #000;
+}
+
+/* MISE EN PAGE */
+
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* ELEMENT/TYPOGRAPHIE */
+
+.logo{
+    color: inherit;
+    font: 900 1.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li{
+    font-size: 700;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+li:hover{
+    color: #D300B7;
+}
+
+button{
+    font-size: 700;
+    color: #D300B7;
+    text-transform: uppercase;
+    line-height: 100%;
+    background-color: transparent;
+    border: 4px solid #D300B7;
+    border-radius: 56vh;
+    padding: 10px 30px;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #D300B7;
+}
+
+h1{
+    font: 700 4rem/110%;
+    text-transform: uppercase;
+    color: #D300B7;
+}
+
+h2{
+    font: 700 3rem/110%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h3{
+    font: 700 2rem/110%;
+    text-transform: uppercase;
+    color: #D300B7;
+}
+
+.hero p{
+    font: 400 1.5/160% "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    color: #fff;
+}
+
+.contenu p{
+    font: 400 1.125/160% "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    color: 400 1.5/160% "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    color: #fff;
+}
+
+.card p{
+    color: inherit;
+}
+
+.rond{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    background-color: #D300B7;
+    color: #fff;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rond:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+span.material-symbols-outlined{
+    font-size: 3.125rem;
+}
+
+footer p{
+    font: 700 1.125/160% "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.modal-box p {
+    font: 400 1.125/160% "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* COMPONENTS */
+
+header{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 20px;
+}
+
+.hero{
+    background: url(../images/hero.jpg) no-repeat top center/100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.boite{
+    margin-left: auto;
+    text-align: left;
+    background: black; 
+    border-radius: 20px;
+    background: rgba(0, 0, 0, .5);
+    padding: 40px; 
+    width: 50%;
+}
+
+.contenu{
+    background-color: #222;
+    padding: 100px 135px;
+}
+
+h2, .contenu p{
+    text-align: center;
+}
+
+.article{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card{
+    text-align: center;
+    background-color: #fff;
+    max-width: 370px;
+    max-height: 570px;
+    padding: 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.coin{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    z-index: 1;
+}
+
+article button{
+    margin-top: auto;
+}
+
+.icone{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    margin: 50px 430px 60px;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.visible{
+    display: flex;
+}
+
+.modal-box {
+    background-color: #fff;
+    padding: 300px 500px;
+    border-radius: 20px;
+    max-height: 80%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
